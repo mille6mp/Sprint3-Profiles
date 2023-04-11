@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to OfficeOurs!</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+		crossorigin="anonymous">
+	<!-- Custom CSS -->
+	<style>
+		.card {
+			width: 500px;
+			margin: 50px auto;
+			margin-bottom: 100px;
+			padding: 50px;
+			border-radius: 40px;
+			background-color: #61D283;
+			color: white;
+			text-align: center;
+		}
+		.card h2 {
+			margin-top: 0;
+		}
+		.button {
+			display: inline-block;
+			background-color: transparent;
+			color: #5F3DC4;
+			border: none;
+			font-size: 18px;
+			font-weight: bold;
+			padding: 10px 20px;
+			margin: 10px;
+			text-transform: uppercase;
+			position: relative;
+			overflow: hidden;
+			cursor: pointer;
+			transition: all 0.3s ease;
+		}
+		.button:hover {
+			color: #61D283;
+			background-color: transparent;
+		}
+		.button::before {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 0%;
+			height: 3px;
+			background-color: white;
+			transition: all 0.3s ease;
+		}
+		.button:hover::before {
+			width: 100%;
+			height: 3px;
+			background-color: white;
+			content: "";
+			display: block;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+		}
+		.logo {
+			display: block;
+			margin: 50px auto;
+			width: 400px;
+		}
+		.image {
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			background-size: cover;
+		}
+	</style>
+</head>
+<body>
+	<header class="d-flex justify-content-between">
+		<div>
+			<a href="index.html" class="button" style="margin-top: 20px;">Back to Welcome</a>
+		</div>	
+	</header>
+	<section><div>
+		<img class="logo" src="images/oologo.png" alt="Logo">
+	</div></section>
+	<section>
+		<div class="card">
+			<h2>Let's Get Started!</h2>
+			<p style="font-size: 20px;">Are you a Student or Faculty?</p>
+			<div>
+				<a href="signup-s.html">
+				<button class="button" style="color: white;">Student</button>
+				</a>
+				<a href="signup-p.html">
+				<button class="button" style="color: white;">Faculty</button>
+				</a>
+			</div>
+		</div>
+	</section>
+	<!-- Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14

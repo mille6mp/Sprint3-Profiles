@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student Log-in</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <style>
+    .button {
+			display: inline-block;
+			background-color: transparent;
+			color: #5F3DC4;
+			border: none;
+			font-size: 18px;
+			font-weight: bold;
+			padding: 10px 20px;
+			margin: 10px;
+			text-transform: uppercase;
+			position: relative;
+			overflow: hidden;
+			cursor: pointer;
+			transition: all 0.3s ease;
+		}
+		.button:hover {
+			color: #61D283;
+			background-color: transparent;
+		}
+		.button::before {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 0%;
+			height: 3px;
+			background-color: white;
+			transition: all 0.3s ease;
+		}
+		.button:hover::before {
+			width: 100%;
+			height: 3px;
+			background-color: white;
+			content: "";
+			display: block;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+		}
+     .logo {
+			display: block;
+			margin: 10px auto;
+			width: 500px;
+		}
+  </style>
+  <body>
+    <header class="d-flex justify-content-between">
+        <div>
+            <a href="listart.html" class="button" style="margin-top: 20px;">Back to Role Selection</a>
+        </div>	
+    </header>
+    <section><div>
+        <img class="logo" src="images/oologo.png" alt="Logo">
+    </div></section>
+    <section>
+      <div class="d-flex justify-content-center mt-5">
+        <div class="card border-0" style="width: 400px; border-radius: 20px; background-color: #5F3DC4;">
+          <div class="card-body">
+            <h5 class="card-title text-center" style="font-weight: 400; color: white;">Log-in</h5>
+            <form>
+              <div class="form-group">
+                <label for="username" style="color: white;">Username:</label>
+                <input type="text" class="form-control" id="username">
+              </div>
+              <div class="form-group">
+                <label for="password" style="color: white;">Password:</label>
+                <input type="password" class="form-control" id="password">
+              </div>
+              <div class="text-center">
+                <a href="home-s.html" class="btn btn-primary mx-2" role="button" style="background-color: #5F3DC4; color: #FFFFFF;">Log-in</a>
+                <button type="button" class="btn btn-link mx-2" data-toggle="modal" data-target="#forgotPasswordModal" style="color: #FFFFFF;">Forgot Password?</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Forgot Password Modal -->
+    <div class="modal fade" id="forgotPasswordModal" tabindex="-1" role="dialog" aria-labelledby="forgotPasswordModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="forgotPasswordModalLabel">Forgot Password?</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email">
+              </div>
+              <div class="text-center">
+                <!-- <a href="home.html">
+                  <button type="submit" class="btn btn-primary mx-2 button">Log-in</button>
+                </a>  -->
+                <a href="home.html" class="btn mx-2 button" role="button" >Log-in</a>
+                <button type="button" class="btn btn-link mx-2 button" data-toggle="modal" data-target="#forgotPasswordModal">Forgot Password?</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

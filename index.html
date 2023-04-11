@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Welcome to OfficeOURS</title>
+</head>
+<style>
+  .button {
+  display: inline-block;
+  position: fixed;
+  padding-bottom: 20px;
+}
+  .underline {
+  position: relative;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.underline::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #61D283;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.underline:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+
+</style>
+<body>
+    <!-- Create a full-width image section -->
+   <section class="jumbotron text-center" style="background-image: url('images/homeheader.png'); background-size: cover; background-position: center; height: 375px; border-radius: 0 0 50px 50px; background-color: #5F3DC4;">
+      <div class="container">
+      <div class="container">
+      </div>
+  </section>
+
+    <!-- Create a text section -->
+    <section class="container" style="margin-bottom: 70px;">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 style="color: #5F3DC4; margin-bottom: 20px; font-size: 43px;">Office Hours, Made Effortless.</h1>
+                <p style="font-size: 18px;font-weight: 300;">Introducing OfficeOurs, A web app that simplifies office hour 
+                  scheduling for students and professors. OfficeOurs makes it easy for 
+                  students to book appointments with their professors and helps professors efficiently 
+                  manage their office hours. No more long lines or scheduling struggles – our service 
+                  streamlines the process, making it effortless and stress-free. Say goodbye to office
+                   hour headaches and hello to a convenient, hassle-free experience with OfficeOurs.</p>
+                <a href="start.html">
+                   <button class="underline" style="margin-right: 20px; margin-top: 20px; font-weight: 400; font-size: 18px; color: #5F3DC4;">Get Started</button>
+              </a>
+                   <a href="listart.html">
+                  <button class="underline" style="font-weight: 400; font-size: 18px; color: #5F3DC4;">Log In</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Include Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

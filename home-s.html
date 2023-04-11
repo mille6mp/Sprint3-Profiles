@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<!-- jQuery library -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- jQuery UI library -->
+	<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+  
+<!-- jQuery UI stylesheet -->
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/smoothness/jquery-ui.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+	<script src="https://kit.fontawesome.com/c47910bfd7.js" crossorigin="anonymous"></script>
+
+<!-- jQuery (additional)-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-lZFHibo97UIiOtP7r/hN9LucWPE0GCN8WERXhZJgf+TTFY6uT8UC4U+M2MJgaxCna4WyK9Xv+9j0WqjQbUrBTQ==" crossorigin="anonymous"></script>
+<!-- Bootstrap JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha512-fnR/9fJjNlStnF1m6UHv6U1pRCZANjzT13pzOFXsRG4UkJGRiIB1mUpKjLW8OwvVrDZzFG2POV7hxO8XUnjx7A==" crossorigin="anonymous"></script>
+</head>
+<style>
+	header {
+		background-color: #5F3DC4;
+	}
+	nav {
+		background-color: #5F3DC4; 
+	}
+
+/* Center the logo and nav */
+	.navbar {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+/* Add an oval outline with an animation on hover for the nav buttons */
+	.nav-item {
+		margin-right: 30px;
+		border-radius: 50px;
+		transition: all 0.2s ease-in-out;
+	}
+
+	.nav-item:hover {
+		border-color: #00f7bf;
+		background-color: #FFFFFF;
+	}
+
+	.nav-item:hover a {
+		color: #5F3DC4;
+	}
+
+	.nav-link {
+		border: 2px solid transparent;
+		border-radius: 50px;
+		padding: 0.5rem 1rem;
+		color: #FFFFFF;
+		transition: all 0.2s ease-in-out;
+	}
+
+	.nav-link a {
+  background-color: transparent;
+  transition: none;
+}
+
+.nav-link a:hover {
+  color: #5F3DC4;
+  border-color: #D2C2F7;
+}
+
+
+
+	.dropdown:hover .dropdown-menu {
+		display: block;
+	}
+
+	.dropdown-menu {
+		display: none;
+		position: absolute;
+		z-index: 1000;
+		background-color: #fff;
+		min-width: 10rem;
+		padding: 0.5rem 0;
+		border-radius: 10px;
+		box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+	}
+
+	.dropdown-menu a {
+		color: #5F3DC4;
+		padding: 0.5rem 1rem;
+		transition: all 0.2s ease-in-out;
+	}
+
+	.dropdown-menu a:hover {
+		background-color:#5F3DC4;
+		color: #fff;
+	}
+
+.fas.fa-sign-out-alt {
+  color: #fff; /* change this to the color you want */
+}
+
+.fas.fa-sign-out-alt:hover {
+  color: #ff6565; /* change this to the color you want */
+}
+
+.fas.fa-sign-out-alt:hover::after {
+  color: #ff6565; /* change this to the color you want */
+}
+
+
+
+	.hero-image {
+		background-image: url('images/hero.png');
+		background-size: cover;
+		background-position: center;
+		height: 30vh; /* set the height of the element to be the height of the viewport */
+  display: flex; /* use flexbox to center the text vertically and horizontally */
+  justify-content: center;
+  align-items: center;
+		border-bottom-left-radius: 40px;
+		border-bottom-right-radius: 40px;
+
+	}
+	.container {
+		max-width: 800px;
+		margin: 0 auto;
+		text-align: left;
+	}
+
+
+	h2 {
+		font-size: 36px;
+		margin-top: 30px;
+		margin-bottom: 10px;
+		color: #5F3DC4;
+	}
+
+	p {
+		font-size: 18px;
+		line-height: 1.5;
+		
+	}
+
+   
+	.classes{
+		max-width: 100px
+	}
+
+	.navbar-toggler-icon {
+		background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+	}
+
+	.navbar-toggler.animated .navbar-toggler-icon {
+		transform: rotate(90deg);
+		transition: all 0.3s ease-in-out;
+	}
+	
+
+	
+</style>
+<body>
+    <header>
+        <img src="images/logowhite.png" alt="Logo" class="img-fluid p-3" style="display: block; margin: auto;">
+    </header>
+	<nav class="navbar navbar-expand-lg navbar">
+        <div class="container-fluid">
+        	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            	<span class="navbar-toggler-icon"></span>
+          	</button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link active" href="home-s.html"><i class="fa-solid fa-house"></i></a>
+				</li>
+				
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="" id="office-hours" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Office Hours</a>
+					<div class="dropdown-menu" aria-labelledby="office-hours">
+						<a class="dropdown-item" href="ohsignup-s.html">Sign Up</a>
+						<a class="dropdown-item" href="upcoming-s.html">View Upcoming</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="myprof-s.html" id="office-hours" role="button">Search</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="" id="office-hours" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My Account</a>
+					<div class="dropdown-menu" aria-labelledby="office-hours">
+						<a class="dropdown-item" href="settings-s.html">Settings</a>
+						<a class="dropdown-item" href="myclasses-s.html">My Classes</a>
+						<a class="dropdown-item" href="editclasses-s.html">Edit Classes</a>
+					</div>
+				</li>
+				<a class="nav-link" href="login-s.html" title="Log Out">
+					<i class="fas fa-sign-out-alt"></i>
+				</a>			  
+			</ul>
+          </div>
+        </div>
+      </nav>
+<div class="hero-image">
+	
+  </div>
+  
+  <div class="section">
+	<h2 style="margin-left: 40px; font-weight: 300;">Hello, Student!</h2>
+	<p style="margin-left: 40px;" style="margin-bottom: 70px; font-weight: 600;">Student at James Madison University</p>
+  </div>
+
+  
+  <div style="display: flex; flex-wrap: wrap;">
+
+<div class="col-lg-6 col-md-12" style="border-radius: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.3); padding: 15px; background-color: #fff; margin-right: 1.5%; margin-bottom: 2%;">
+	  <h2 style="font-weight: 300; text-align: center;">Upcoming Queues</h2>
+	  <table style="border-collapse: collapse; width: 100%; margin-right: 3%;">
+		<thead>
+		  <tr>
+			<th style="text-align: center; padding: 10px;">Class</th>
+			<th style="text-align: center; padding: 10px;">Professor</th>
+			<th style="text-align: center; padding: 10px;">Wait Time</th>
+			<th style="text-align: center; padding: 10px;">View</th>
+			<th style="padding: 10px;"></th>
+		  </tr>
+		</thead>
+		<tbody>
+		  <tr style="margin-bottom: 7px;">
+			<td style="padding: 10px; text-align: center;">MATH 220</td>
+			<td style="padding: 10px; text-align: center;">A. Anderson</td>
+			<td style="padding: 10px; text-align: center;">~10 minutes</td>
+			<td style="padding: 10px; text-align: center;">
+				<button onclick="location.href='#';" style="background-color: #4CAF50; border: none; border-radius: 20px; color: white; padding: 10px;">
+					View Queue
+				</button>
+			</td>
+			
+		</tr>
+		  <tr>
+			<td style="padding: 10px; text-align: center;">MATH 220</td>
+			<td style="padding: 10px; text-align: center;">A. Anderson</td>
+			<td style="padding: 10px; text-align: center;">~10 minutes</td>
+			<td style="padding: 10px; text-align: center;"><button style="background-color: #4CAF50; border: none; border-radius: 20px; color: white; padding: 10px;">View Queue</button></td>
+		  </tr>
+		  <tr>
+			<td style="padding: 10px; text-align: center;">MATH 220</td>
+			<td style="padding: 10px; text-align: center;">A. Anderson</td>
+			<td style="padding: 10px; text-align: center;">~10 minutes</td>
+			<td style="padding: 10px; text-align: center;"><button style="background-color: #4CAF50; border: none; border-radius: 20px; color: white; padding: 10px;">View Queue</button></td>
+		  </tr>
+		</tbody>
+	  </table>
+	</div>
+
+	<div class="col-lg-5 col-md-12" style="border-radius: 20px; border-color: #5F3DC4; border-width: 2px; box-shadow: 0 2px 5px rgba(0,0,0,0.3); padding: 10px; background-color: #fff; margin-left: 2%; margin-right: 2%; margin-bottom: 2%;">
+	  <h2 style="font-weight: 300; margin-left: 3%;text-align: center;">My Classes</h2>
+	  <table style="border-collapse: collapse; width: 100%;">
+		<thead>
+		  <tr>
+			<th style="text-align: center; padding: 20px;">Class</th>
+			<th style="text-align: center; padding: 20px;">Professor</th>
+			<th style="text-align: center; padding: 20px;">More Info</th>
+		  </tr>
+		</thead>
+		<tbody>
+		  <tr>
+			<td style="padding: 10px; text-align: center;">MATH 220</td>
+			<td style="padding: 10px; text-align: center;">A. Anderson</td>
+			<td style="text-align: center;"><button style="background-color: #5F3DC4; border: none; border-radius: 20px; color: white; padding-right: 20px; padding-top: 7px; padding-left: 20px; padding-bottom: 10px; margin-bottom: 5px; margin-top: 5px;">View</button></td>
+		  </tr>
+		  <tr>
+			<td style="padding: 10px; text-align: center;">MATH 220</td>
+			<td style="padding: 10px; text-align: center;">A. Anderson</td>
+			<td style="text-align: center;"><button style="background-color: #5F3DC4; border: none; border-radius: 20px; color: white; padding-right: 20px; padding-top: 7px; padding-left: 20px; padding-bottom: 10px; margin-bottom: 5px; margin-top: 5px;">View</button></td>
+		  </tr>
+		  <tr>
+			<td style="padding: 10px; text-align: center;">MATH 220</td>
+			<td style="padding: 10px; text-align: center;">A. Anderson</td>
+			<td style="text-align: center;"><button style="background-color: #5F3DC4; border: none; border-radius: 20px; color: white; padding-right: 20px; padding-top: 10px; padding-left: 20px; padding-bottom: 10px; margin-bottom: 5px; margin-top: 5px;">View</button></td>
+		  </tr>
+		</tbody>
+		<tr>
+			<td style="padding: 10px; text-align: center;">MATH 220</td>
+			<td style="padding: 10px; text-align: center;">A. Anderson</td>
+			<td style="text-align: center;"><button style="background-color: #5F3DC4; border: none; border-radius: 20px; color: white; padding-right: 20px; padding-top: 10px; padding-left: 20px; padding-bottom: 10px; margin-bottom: 5px; margin-top: 5px;">View</button></td>
+		  </tr>
+		</tbody>
+		<tr>
+			<td style="padding: 10px; text-align: center;">MATH 220</td>
+			<td style="padding: 10px; text-align: center;">A. Anderson</td>
+			<td style="text-align: center;"><button style="background-color: #5F3DC4; border: none; border-radius: 20px; color: white; padding-right: 20px; padding-top: 10px; padding-left: 20px; padding-bottom: 10px; margin-bottom: 5px; margin-top: 5px;">View</button></td>
+		  </tr>
+		</tbody>
+	  </table>
+	</div>
+
+  
+	
+</div>
+
+<footer style="background-color: #5F3DC4; padding: 20px;">
+	<div style="display: flex; justify-content: space-between; align-items: center; color: #fff;">
+	  <div>
+		<img src="images/logowhite.png" alt="OfficeOurs logo" style="width: 80%;">
+	  </div>
+	  <div style="display: flex; justify-content: flex-end; flex-wrap: wrap;">
+		<button style="background-color: transparent; border: none; color: #fff; font-size: 15px; margin: 0 5px 10px 0; width: fit-content;">About</button>
+		<button style="background-color: transparent; border: none; color: #fff; font-size: 15px; margin: 0 5px 10px 0; width: fit-content;">Privacy Policy</button>
+		<button style="background-color: transparent; border: none; color: #fff; font-size: 15px; margin: 0 5px 10px 0; width: fit-content;">Contact</button>
+		<button style="background-color: transparent; border: none; color: #fff; font-size: 15px; margin: 0 5px 10px 0; width: fit-content;">Terms and Conditions</button>
+	  </div>
+	</div>
+  </footer>
+  
+  <style>
+	@media only screen and (min-width: 768px) {
+	  button {
+		margin-right: 20px;
+	  }
+	}
+  </style>
+  
+  
+  
+  
+
+  
+
+<script>
+	//Javascript for hamburger menu
+    $(document).ready(function() {
+		$(".navbar-toggler").click(function() {
+			$(this).toggleClass("animated");
+		});
+    });
+
+</script> 
+		
+</body>
+</html>

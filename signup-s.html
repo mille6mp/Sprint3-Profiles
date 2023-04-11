@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign-up</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<style>
+    label {
+  color: white;
+  font-weight: 300;
+}
+.button {
+			display: inline-block;
+			background-color: transparent;
+			color: #5F3DC4;
+			border: none;
+			font-size: 18px;
+			font-weight: bold;
+			padding: 10px 20px;
+			margin: 10px;
+			text-transform: uppercase;
+			position: relative;
+			overflow: hidden;
+			cursor: pointer;
+			transition: all 0.3s ease;
+		}
+		.button:hover {
+			color: #61D283;
+			background-color: transparent;
+		}
+		.button::before {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 0%;
+			height: 3px;
+			background-color: white;
+			transition: all 0.3s ease;
+		}
+		.button:hover::before {
+			width: 100%;
+			height: 3px;
+			background-color: white;
+			content: "";
+			display: block;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+		}
+        .logo {
+			display: block;
+			margin: 10px auto;
+			width: 500px;
+		}
+</style>
+<body>
+            <header class="d-flex justify-content-between">
+                <div>
+                    <a href="start.html" class="button" style="margin-top: 20px;">Back to Role Selection</a>
+                </div>	
+            </header>
+            <section><div>
+                <img class="logo" src="images/oologo.png" alt="Logo">
+            </div></section>
+            <section>
+        <div class="d-flex justify-content-center">
+          <div class="card border-0" style="width: 700px; border-radius: 20px; background-color: #5F3DC4;">
+            <div class="card-body">
+              <h5 class="card-title text-center" style="font-weight: 500; color: white;">Student Sign-Up</h5>
+              <form>
+                <div class="form-group">
+                  <label for="firstName">First Name:</label>
+                  <input type="text" class="form-control" id="firstName">
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last Name:</label>
+                  <input type="text" class="form-control" id="lastName">
+                </div>
+                <div class="form-group">
+                  <label for="username">Username:</label>
+                  <input type="text" class="form-control" id="username">
+                </div>
+                <div class="form-group">
+                  <label for="password">Password:</label>
+                  <input type="password" class="form-control" id="password">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" class="form-control" id="email">
+                </div>
+                <div class="form-group">
+                  <label for="phoneNumber">Phone Number:</label>
+                  <input type="tel" class="form-control" id="phoneNumber">
+                </div>
+                <div class="form-group">
+                  <label for="classes">Major:</label>
+                  <input type="tel" class="form-control" id="major">
+                </div>
+                <div class="form-group">
+                    <label for="classes">Student ID:</label>
+                    <input type="tel" class="form-control" id="studentId">
+                  </div>
+                <div class="text-center">
+                  <a href="home.html">
+                  <button type="submit" class="btn mx-2" style="background-color: #61D283; color: #ffffff;">Create Account</button>
+                  </a>
+                  <button type="reset" class="btn mx-2" style="background-color: #ffffff; color: #5F3DC4;">Clear</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+  </html>
+      
